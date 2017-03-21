@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title> Exercise 4</title>
+		<meta charset = "utf-8">
+		<meta content = "Exercise 4 - Да се изведат съобщения към потребителя и да се прочетат две различни числа от клавиатурата A и B, разпечатайте в нарастващ ред." name = "short description">
+
+	</head>
+	<body>
+		<div>
+			<h3> Exercise 4</h3>
+			<p>Да се изведат съобщения към потребителя и да се прочетат две различни числа от клавиатурата A и B, разпечатайте в нарастващ ред.</p>
+			<br>
+			<input type="button" name="CompareButton" value ="Try" onclick = "revValues()">
+			<br>
+			<p id="demo"></p>
+		</div>
+		<script type="text/javascript">
+		
+			function revValues() {
+				let val1 = parseFloat(prompt("First number"));
+				let val2 = parseFloat(prompt("Second number"));
+
+				if ((val1) > (val2)){
+					console.log(val2 + ';' + val1);
+					document.getElementById("demo").innerHTML = "The numbers: " + val2 + ";" + val1;
+				} else{
+					console.log(val1 + ';' + val2);
+					document.getElementById("demo").innerHTML = "The numbers: " + val1 + ";" + val2;
+				}
+
+			}	
+		</script>
+	</body>
+</html>
