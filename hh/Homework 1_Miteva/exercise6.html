@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title> Exercise 6</title>
+		<meta charset = "utf-8">
+		<meta content = "Exercise 6 -Въведете три числа от клавиатурата а1, а2 и а3. Разменете стойностите им така, че а1 да има стойността на а2, а2 да има стойността на а3, а а3 да има старата стойност на а1" name = "short description">
+
+	</head>
+	<body>
+		<form>
+			<h3> Exercise 6</h3>
+			<p>Въведете три числа от клавиатурата а1, а2 и а3. Разменете стойностите им така, че а1 да има стойността на а2, а2 да има стойността на а3, а а3 да има старата стойност на а1 </p>
+			<br>
+			<input type="button" name="CompareButton" value ="Try" onclick = "revValues()">
+			<br>
+			<p id="demo"></p>
+		</form>
+		<script type="text/javascript">
+		
+			function revValues() {
+				let a1 = parseFloat(prompt("First number"));
+				let a2 = parseFloat(prompt("Second number"));
+				let a3 = parseFloat(prompt("Third number"));
+
+				let d;
+				d = a1; 
+				a1 = a2;
+				a2 = a3; 
+				a3 = d;
+
+				console.log(a1 + ';' + a2 + ';' + a3);
+								
+			}	
+		</script>
+	</body>
+</html>
