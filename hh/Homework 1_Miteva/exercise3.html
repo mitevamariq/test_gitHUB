@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title> Exercise 3</title>
+		<meta charset = "utf-8">
+		<meta content = "Exercise 3 - Да се изведат съобщения към потребителя и да се прочетат две числа от клавиатурата A и B след което разменете стойността им. Разпечатайте новите стойности в конзолата." name = "short description">
+
+	</head>
+	<body>
+		
+			<h3> Exercise 3</h3>
+			<p>Да се изведат съобщения към потребителя и да се прочетат две числа от клавиатурата A и B след което разменете стойността им. Разпечатайте новите стойности в конзолата.</p>
+			<br>
+		<form>
+			<input type="button" name="CompareButton" value ="Reverse" onclick = "revrValues()">
+		</form>
+		<script type="text/javascript">
+		
+			function revrValues() {
+				let a, b, c, d;
+
+				a = parseFloat(prompt('First number'));
+				b = parseFloat(prompt('Second number'));
+
+				console.log('Може да видим оригиналните стойности на а =' + a + ' и оригиналната стойност на b =' + b + '');
+				
+				c = b;
+				b = a;
+				a = c;
+ 
+				console.log('Новата стойност на b = ' + b);
+				console.log('Новата стойност на a = ' + a);
+
+			}		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title> Exercise 1</title>
+		<meta charset = "utf-8">
+		<meta content = "Exercise 1 - Да се изведат съобщения към потребителя и да се прочетат две числа от клавиатурата A и B (може да са с плаваща запетая)." name = "short description">
+
+	</head>
+	<body>
+		<form>
+			<h3> Exercise 1 </h3>
+			<p>Да се изведат съобщения към потребителя и да се прочетат две числа от клавиатурата A и B (може да са с плаваща запетая). После да се прочете трето число C и да се провери дали то е между A и B. Да се изведе подходящо съобщение в конзолата за това дали C е между A и B. </p>
+			<br>
+				<input type="button" name="CompareButton" value ="Compare" onclick = "checkValue()">
+		</form>
+		<script type="text/javascript">
+			function checkValue() {
+				let a, b, c;
+
+				a = parseFloat(prompt('First number'))
+				b = parseFloat(prompt('Second number'))
+				c = parseFloat(prompt('Third number'))
+
+				if (((c > a) && (c < b)) || ((c < a) && (c > b))){
+					console.log("Числото " + c + " e между " + a + " и " + b + "");
+					
+				} else {
+					console.log("Числото " + c + " не e между " + a + " и " + b + "");
+					
+				};
+			}
+		</script>
+	</body>
+</html>

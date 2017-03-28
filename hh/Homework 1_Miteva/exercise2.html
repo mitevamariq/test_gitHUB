@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title> Exercise 2</title>
+		<meta charset = "utf-8">
+		<meta content = "Exercise 2 - Запишете тяхната сума, разлика, произведение и остатък от деление в отделни променливи и разпечатайте тези резултати в конзолата." name = "short description">
+
+	</head>
+	<body>
+		<form>
+			<h3> Exercise 2</h3>
+			<p>Да се изведат съобщения към потребителя и да се прочетат две целочислени числа от клавиатурата A и B. Запишете тяхната сума, разлика, произведение и остатък от деление в отделни променливи и разпечатайте тези резултати в конзолата. Опитайте същото с числа с плаваща запетая.  </p>
+			<br>
+			<input type="button" name="CompareButton" value ="GO!" onclick = "calcValues()">
+		</form>
+		<script type="text/javascript">
+
+			function calcValues() {
+				let a, b, c, d, f, g;
+
+				a = parseFloat(prompt('First number'));
+				b = parseFloat(prompt('Second number'));
+
+
+				c = a + b; 
+				console.log(c);
+
+				d = a - b;
+				console.log(d);
+
+				f = a*b; 
+				console.log(f);
+
+				g = a%b;
+				console.log(g);
+			}
+
+				
+		</script>
+	</body>
+</html>
