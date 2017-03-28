@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title> Exercise 5</title>
+		<meta charset = "utf-8">
+		<meta content = "Exercise 5 - Да се изведат съобщения към потребителя и да се прочетат три различни числа, разпечатайте в конзолата в низходящ ред. " name = "short description">
+
+	</head>
+	<body>
+		<h3> Exercise 5</h3>
+		<p>Да се изведат съобщения към потребителя и да се прочетат три различни числа, разпечатайте в конзолата в низходящ ред. </p>
+		<script type="text/javascript">
+			function arraySort(array) {
+				  array.some(function() {
+					let isNotSwapped = true;
+					let i,temp;
+					for (i = 0; i < array.length - 1; i++) {
+					  if (array[i] < array[i+1]) {
+						temp = array[i+1];
+						array[i+1] = array[i];
+						array[i] = temp;
+						isNotSwapped = false;
+					  }
+					}
+					return isNotSwapped;
+				  });
+				}
+
+				let val1 = parseFloat(prompt("First number"));
+				let val2 = parseFloat(prompt("Second number"));
+				let val3 = parseFloat(prompt("Third number"));
+				let array_n = [val1, val2, val3];
+				arraySort(array_n);
+				console.log(array_n);
+			
+		</script>
+	</body>
+</html>
